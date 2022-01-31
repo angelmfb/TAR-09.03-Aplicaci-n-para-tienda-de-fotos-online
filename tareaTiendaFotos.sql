@@ -1,3 +1,4 @@
+CREATE DATABASE tiendaFotos;
 USE tiendaFotos;
 
 CREATE TABLE cliente(
