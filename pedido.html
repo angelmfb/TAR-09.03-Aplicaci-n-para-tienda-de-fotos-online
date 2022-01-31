@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="angel" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0"><!--Para que en el movil el ajuste lo haga bien-->
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Imagenes</title>
+  </head>
+  <body>
+    <h1>Selecciona tus imágenes deseadas</h1>
+    <form method="post" enctype="multipart/form-data" action="pocesos/subirArchivo.php">
+      <label for="imagen">Introduce una imagen</label><br /><br />
+      <input type="file" name="imagen"/><br /><br />
+      <input type="submit" /><br /><br />
+      <label><a href="procesos/mostrar.php">Datos del pedido(pínchame)</a></label>
+      <label><a href="index.html">Ir al inicio(pínchame)</a></label>
+    </form>
+  </body>
+</html>
