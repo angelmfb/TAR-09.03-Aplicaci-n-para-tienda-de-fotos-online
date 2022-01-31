@@ -4,7 +4,7 @@ USE tiendaFotos;
 CREATE TABLE cliente(
     idCliente tinyint UNSIGNED primary key AUTO_INCREMENT not null,
     nombre varchar(50) not null,
-    direccion varchar(60) not null,
+    direccion varchar(80) not null,
     correo varchar(100) not null
 );
 CREATE TABLE pedido(
