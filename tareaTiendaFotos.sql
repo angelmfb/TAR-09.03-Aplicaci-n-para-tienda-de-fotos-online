@@ -20,6 +20,7 @@ CREATE TABLE producto(
 CREATE TABLE pedidoProducto(
     idPedido smallint UNSIGNED not null,
     idProducto tinyint UNSIGNED not null,
+    fecha datetime not null,
     CONSTRAINT FK_idPedido FOREIGN KEY (idPedido) REFERENCES pedido(idPedido) ON DELETE CASCADE ON UPDATE CASCADE,
     CONSTRAINT FK_idProducto FOREIGN KEY (idProducto) REFERENCES producto(idProducto) ON DELETE CASCADE ON UPDATE CASCADE,
     CONSTRAINT PK_pedido_producto PRIMARY KEY (idPedido,idProducto)
